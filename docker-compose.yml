@@ -13,9 +13,7 @@ services:
       DB_USER: root
       DB_PASSWORD: password
       DB_NAME: combination_db
-    volumes:
-      - .:/app
-    command: npm run dev
+    restart: always
 
   mysql:
     image: mysql:8.0
