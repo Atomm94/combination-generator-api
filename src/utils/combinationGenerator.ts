@@ -1,5 +1,5 @@
 export function generateItems(numbers: number[]): string[] {
-    const letters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+    const letters = process.env.LETTERS || 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
     const items: string[] = [];
 
     numbers.forEach((count, index) => {
