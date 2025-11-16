@@ -24,13 +24,17 @@ All data (items, combinations, and API responses) is stored in MySQL using **raw
 
 ## 🐳 Docker Setup
 
-### **1. Start Docker containers**
+### Start Docker containers
 ```bash
 docker-compose up -d
+```
 
-### **2. Enter the API container
-```bash
+## 🚀 Migrations
+### Enter the API container
+```
 docker-compose exec api sh
-
-### ***3. Run migrations inside the container
+```
+### Run migrations inside the container
+```
 npm run migrate
+```
